@@ -1,0 +1,23 @@
+<?xml version= "1.0"?>
+<menu>
+	<section>
+		<title>Reporte de garitas</title>
+		<href></href>
+		<li_id>side_reporte</li_id>
+	</section>
+	<section>
+		<title>Quienes Somos</title>
+		<href>quienes-somos</href>
+		<li_id>side_nosotros</li_id>
+	</section>
+	<!--<section>
+		<title>Anúnciate con nosotros</title>
+		<href>anunciate</href>
+		<li_id>side_anunciate</li_id>
+	</section>
+	<section>
+		<title>Contáctanos</title>
+		<href>contactanos</href>
+		<li_id>side_contacto</li_id>
+	</section>-->
+</menu>

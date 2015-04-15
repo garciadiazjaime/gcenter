@@ -1,0 +1,17 @@
+.gray_left_gradient{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+	
+.acerca .half_container{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6d1d1d1', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+#side_menu{
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+@media screen and (max-width: 950px){
+	#menu_mobile li{filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */}
+}
+
+

@@ -1,0 +1,135 @@
+@import _setup.sass
+
+// ******************* HEADER: Main ********************
+#header
+	background: #343740
+	color: #FFFFFF
+	margin: 0 auto 0
+	padding: 20px 10% 
+	
+	#optionbox_big
+		display: block
+		float: right		
+		margin: 9px 0 0 0
+	
+	#optionbox_small
+		float: right
+		background: $my_color
+		@include border-radius(5px)
+		color: #FFFFFF
+		display: none
+		font-size: 16px
+		font-weight: bold
+		margin: 9px 0 0 5px
+		padding: 8px 10px
+		text-transform: uppercase
+		
+		&:hover
+			background: #FFFFFF
+			color: #171B21
+		
+	.lang_btn
+		background: #171B21
+		@include border-radius(5px)
+		color: #FFFFFF
+		display: inline-block
+		font-size: 16px
+		font-weight: bold
+		margin: 0 0 0 5px
+		padding: 8px 10px
+		text-transform: uppercase
+		
+	
+	.current
+		background: #FFFFFF
+		color: #171B21
+		
+	.g_selector
+		display: inline-block
+		text-align: center
+		width: 300px
+			
+		a
+			color: #FFFFFF
+			font-size: 16px
+			font-weight: bold
+			text-transform: uppercase
+			padding: 8px 0
+.logo
+	display: block
+	width: 225px
+	float: left
+
+
+// ****************** HEADER: Expandable ******************
+
+#head_expandable
+	background: #272A33
+	padding: 0 10%
+	height: 0
+	overflow: hidden
+	width: 100%
+
+	div
+		margin: 15px 0
+
+	.infobox
+		color: #ACC4C6
+		float: left
+		display: block
+		font-size: 12px
+		width: 264px
+		padding: 0 0 0 50px
+	
+		a
+			display: inline-block
+			color: #ACC4C6
+			font-weight: bold
+			
+			&:hover
+				color: #FFFFFF
+		img
+			padding: 20px 30px
+			
+			&:hover
+				background: #343740
+				@include border-radius(5px)
+	.garitasbox
+		float: right
+		width: 300px
+		padding: 0 103px 0 0
+	
+		a
+			color: #FFFFFF
+			display: block
+			font-size: 16px
+			font-weight: bold
+			text-align: center
+			text-transform: uppercase
+			padding: 8px 0
+			
+			&:hover
+				color: $my_color
+	
+		
+// ***************** HEADER: Bluestripe *********************
+.blue_stripe
+	background: $my_color
+	padding: 0 10%
+	height: 3px
+	@include transition(height, .3) //ease-in-out
+	
+	a
+		background: $my_color url(../images/bluestripe_arrow.png) no-repeat 10px -17px
+		color: #FFFFFF
+		display: block
+		float: right
+		@include border-radius(5px 5px 0 0) //top-right, top-left
+		height: 19px
+		margin: -19px 227px 0
+		padding: 7px 10px
+		text-align: center
+		width: 33px
+
+	a.opened
+		background: $my_color url(../images/bluestripe_arrow.png) no-repeat 10px 7px
