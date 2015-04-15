@@ -1,0 +1,107 @@
+/* ----------- RESPONSIVE -------------- */
+@media screen and (min-width: 768px)
+	#main_content
+		.wrapp
+			padding: 25px 20px 85px
+
+@media screen and (max-width: 767px)	
+	#main_content
+		margin-bottom: 0
+		
+	header
+		h3
+			display: none
+			
+	#main_content
+		background: white
+		border-bottom: 5px solid $my_color
+		
+		.wrapp
+			border: none
+			@include box-shadow(none)
+		
+	.time-table
+		margin: 0 auto 30px 0
+		
+		.row
+			max-width: 100%
+			
+		.col-xs-12
+			padding: 0
+			
+		h2
+			height: auto
+			margin: 0 0 10px
+			text-align: left
+			
+		h3
+			background: $my_color
+			color: white
+			display: inline-block
+			height: 80px
+			margin: 0 0 15px
+			vertical-align: top
+			width: 40%
+			
+	.border-name
+		padding-left: 0
+		
+	.border-data
+		padding-left: 15px
+		
+		.col-xs-12
+			padding-right: 0
+		
+	.wait-time
+		display: inline-block
+		height: 80px
+		padding: 0 10px
+		text-align: center
+		vertical-align: top
+		width: 60%
+		
+		p
+			display: inline-block
+			margin: 0 -1px 0 0
+			vertical-align: middle
+			width: 99%
+		
+		p:after
+			content: ""
+			display: inline-block
+			height: 80px
+			vertical-align: middle
+			width: 1px
+	
+	.t-normal
+		background-position: -289px -56px
+	
+	.t-sentri
+		background-position: -231px -88px
+	
+	.t-ready
+		background-position: -268px -88px
+
+	.t-peaton
+		background-position: -312px -86px
+				
+@media screen and (max-width: 599px)
+	h2
+		em
+			font-size: 15px
+			padding: 0 20px 5px 0
+			
+	h2
+		margin: 0 0 15px
+		em
+			font-size: 13px
+			
+	#updated_on
+		display: block
+		font-size: 12px
+		padding: 5px 0 0
+		position: static
+		
+	#main_content
+		.wrapp
+			padding: 5px 0 85px

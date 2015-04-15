@@ -1,3 +1,0 @@
-<ul id="side_menu">
-	<li><a href="<?=base_url()?>" id="side_reporte" title="Reporte de Garitas"><span>Reporte de Garitas</span></a></li><li><a href="<?=base_url()?>quienes-somos" id="side_nosotros" title="Quienes Somos"><span>Quienes Somos</span></a></li><li><a href="<?=base_url()?>reporte" id="side_anunciate" title="Anúnciate con Nosotros"><span>Anúnciate con Nosotros</span></a></li><li><a href="<?=base_url()?>reporte" id="side_contacto" title="Contáctanos"><span>Contáctanos</span></a></li>
-</ul>

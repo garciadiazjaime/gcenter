@@ -1,4 +1,6 @@
-application/config/database.php
 *.DS_Store
 *.sassc
 .sass-cache
+node_modules
+bower_components
+npm-debug.log

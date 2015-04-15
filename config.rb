@@ -1,11 +1,6 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-# http_path = "optima/"
-# css_dir = "resources/css"
-# sass_dir = "resources/sass"
-# images_dir = "resources/images"
-# javascripts_dir = "resources/js"
 
 
 #
@@ -14,16 +9,16 @@
 
 # HTTP paths
 http_path = '/'
-http_stylesheets_path = 'resources/css'
-http_images_path = 'resources/images'
-http_javascripts_path = 'resources/js'
+http_stylesheets_path = '/css'
+http_images_path = '/assets/images'
+http_javascripts_path = '/assets/js'
 
 # File system locations
-sass_dir = 'resources/sass'
-css_dir = 'resources/css'
-images_dir = 'resources/images'
-javascripts_dir = 'resources/js'
-fonts_dir = "resources/fonts"
+sass_dir = '/sass_components'
+css_dir = '/assets/css'
+images_dir = '/assets/images'
+javascripts_dir = '/assets/js'
+fonts_dir = '/assets/fonts'
 
 
 # CSS output style - :nested, :expanded, :compact, or :compressed

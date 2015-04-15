@@ -1,0 +1,28 @@
+doctype html
+html(lang='es', data-ng-app="mintApp")
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, maximum-scale=1.0')
+		meta(name='keywords', content='reporte garitas, garitas, garitas tijuana, garitacenter, garita san ysidro, garita otay, linea san ysidro')
+		meta(name='description', content='GaritaCenter - Reporte de garitas para San Ysidro y Otay')
+		title GaritaCenter - Reporte de garitas para San Ysidro y Otay | Tijuana
+
+		link(href='/bootstrap-css-only/css/bootstrap.css', rel='stylesheet', type='text/css')
+		link(href='/font-awesome/css/font-awesome.css', rel='stylesheet')
+		link(href='/css/screen.css', rel='stylesheet', type='text/css')
+		link(rel='icon', type='image/png', href='/images/favicon.ico')
+	body(data-ng-controller="NavigationController")
+		header
+			include ./header
+
+		section#main-content.container
+			.view-frame.ngFade(data-ui-view="main-view")
+
+		footer
+			include ./footer
+			
+		script(src='/angular/angular.js')
+		script(src='/angular-bootstrap/ui-bootstrap.js')
+		script(src='/angular-ui-router/release/angular-ui-router.js')
+		script(src='/angular-animate/angular-animate.js')
+		script(src='/js/app.js')

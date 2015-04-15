@@ -1,0 +1,250 @@
+@import _setup
+
+/* ***************** GENERAL ************************** */
+html, body
+	background: #e0e0e0
+	letter-spacing: 0.03em
+	margin: 0
+	padding: 0
+
+body
+	font: 14px Arial,sans-serif
+	
+a
+	&:hover, &:active, &:focus
+		text-decoration: none
+
+
+/* ***************** LAYOUT *************************** */
+#main_content
+	margin-bottom: 50px
+	
+	.wrapp
+		border-bottom: 5px solid $my_color
+		@include box-shadow(0 0 7px #98999a)
+		background: white
+		padding: 25px 0 85px
+
+.container
+	max-width: 1000px
+
+
+/* ***************** HEADER *************************** */
+header
+	background: #343740
+	border-bottom: 3px solid #1ebfdb
+	color: #FFFFFF
+	margin: 0 auto
+	padding: 10px 0
+	position: relative
+	z-index: 98
+	
+	.navbar
+		margin: 0
+		min-height: 1px
+		
+	.container
+		position: relative
+		
+	h3
+		font-size: 18px
+		font-weight: bold
+		line-height: 1em
+		margin: 15px 0 0 0
+		text-transform: uppercase
+		
+#brand
+	display: block
+	height: 41px
+	line-height: 5000em
+	overflow: hidden
+	position: relative
+	width: 226px
+	
+	.icon
+		background-position: 0 -79px
+		height: 100%
+		left: 0
+		position: absolute
+		top: 0
+		width: 100%
+	
+#head_expander.open	
+	.icon
+		background-position: -106px 0
+		height: 6px
+		margin-left: -6px
+		top: 11px
+		width: 13px
+	
+#patrocinador
+	margin-bottom: 20px
+	margin-top: 15px
+
+	li
+		display: inline-block
+		position: relative
+		margin: 0 0 0 15px
+		vertical-align: top
+		
+	li:first-child
+		margin-left: 0
+		
+	a
+		display: block
+		line-height: 5000em
+		overflow: hidden
+
+#mint
+	a
+		background-position: -256px 0
+		height: 23px
+		width: 70px
+	
+#pool	
+	a
+		background-position: -275px -28px
+		height: 22px
+		width: 51px
+
+#amigos
+	a
+		color: #9e9e9e
+		font-size: 14px
+		
+		&:hover, &:active, &:focus
+			color: lighten(#9e9e9e, 10)
+
+
+/* ***************** FOOTER *************************** */
+
+footer
+	background: #343740
+	border-top: 2px solid #21242d
+	color: #b1b3b5
+	font: 14px  "Myriad Pro", Verdana, sans-serif
+	padding: 30px 0
+	
+	h1
+		color: #acc4c6
+		font-size: 12px
+		margin: 0 0 15px
+		max-width: 315px
+	
+	h4
+		color: $my_color 
+		font: 13px "Myriad Pro", Verdana, sans-serif
+		line-height: 1em
+		margin: 0 0 5px
+		
+		
+	ul
+		list-style-type: none
+		margin: 0 0 10px
+		padding: 0
+
+
+/* ***************** ADS *************************** */
+#paid_content
+	margin: 30px auto 20px
+	max-width: 100%
+	overflow: hidden
+	width: 728px
+	
+#paid_content-xs
+	bottom: 0
+	left: 0
+	position: fixed
+	width: 100%
+	z-index: 100
+	
+	a
+		background: $my_color
+		color: white
+		display: block
+		padding: 15px 5px
+		text-align: center
+		
+		&:hover, &:active, &:focus
+			background: lighten($my_color, 10)
+		
+#paid_container-xs
+	background: #343740
+	bottom: 10px
+	color: #fff
+	height: 0
+	left: 0
+	overflow: hidden
+	position: fixed
+	@include transition(.4s)
+	width: 100%
+	z-index: 99
+	
+	.wrapp
+		background: transparent
+		border: none
+		@include box-shadow(none)
+		margin: 0 auto
+		padding: 50px 0 0
+		position: relative
+		width: 90%
+		
+	h2, h3, h4
+		border-bottom: 3px solid #1ebfdb
+		font: 24px Arial,"Myriad Pro",sans-serif
+		font-weight: bold
+		margin: 0 0 15px
+		position: relative
+		width: 100%
+		
+	
+#paid_container-xs.open
+	opacity: 1
+	
+#paid_container-xs.closed	
+	opacity: 0
+	
+#close-paid_container-xs
+	background: url(#{$img}fe/general_sprite.png) -171px 0 no-repeat
+	display: block
+	height: 19px
+	line-height: 5000em
+	opacity: 1
+	overflow: hidden
+	position: absolute
+	right: 0
+	top: 20px
+	width: 18px
+	
+	&:hover, &:active, &:focus
+		opacity: .8
+
+#paid-face, #paid-web
+	display: inline-block
+	line-height: 5000em
+	overflow: hidden
+		
+#paid-face
+	background-position: -275px -59px
+	height: 20px
+	margin: 0 0 0 15px
+	width: 20px
+	
+#paid-web
+	background-position: -256px -1px
+	height: 20px
+	width: 16px
+
+
+/* ***************** ANIMATION *************************** */
+
+.ngFade.ng-enter
+	transition: .3s linear all
+	opacity: 0
+
+.ngFade.ng-enter-active
+	opacity: 1
+	
+@import _icon
+@import _home
+@import _responsive
